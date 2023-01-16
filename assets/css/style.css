@@ -1,0 +1,22 @@
+body{
+background-image: url("../img/return-of-the-padawan-star-wars-jedi-academy-2.jpg");
+background-size: 30%;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+#iframe{
+  background-color: aquamarine;
+  padding: 1rem;
+
+}
+
+#form{
+  background-color: bisque;
+padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
