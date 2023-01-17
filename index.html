@@ -16,7 +16,7 @@
 
   <script id="script"></script>
   <img id="image">
-  <!--<button onclick="">Click para Var a Imagem</button>-->
+  <button onclick="getRandomDogImage()">Gerar Imagem Random</button>
 
   <form id="form">
     <label for="fname">First name:</label><br>
@@ -27,6 +27,17 @@
   </form>
 
 </div>
+  
+<script>
+async function getRandomDogImage(){
+    await fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+        var img = document.querySelector('#image')
+        img.src = data.message})
+    .catch(e => console.log(e))
+}
+</script>
   
 </body>
 </html>
